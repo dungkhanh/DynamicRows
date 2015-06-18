@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zqw-LP-OOF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fruit Selection Controller-->
+        <scene sceneID="qxA-v6-RMK">
+            <objects>
+                <tableViewController id="zqw-LP-OOF" customClass="UIFruitSelectionController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="K0n-xt-HFt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CitrusCellId" id="aRo-uB-Iet" customClass="UIFruitCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aRo-uB-Iet" id="4AE-aF-hEM">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Citrus" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgG-Et-dgb">
+                                            <rect key="frame" x="8" y="11" width="74" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="74" id="2cL-Cx-fdG"/>
+                                                <constraint firstAttribute="height" constant="21" id="Lq8-LO-fuU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lemon" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfj-sD-9f5">
+                                            <rect key="frame" x="328" y="11" width="264" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="EGy-DS-bBf"/>
+                                                <constraint firstAttribute="width" constant="264" id="bzw-tg-S87"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="jgG-Et-dgb" secondAttribute="bottom" constant="4" id="7uV-1Q-L14"/>
+                                        <constraint firstItem="jgG-Et-dgb" firstAttribute="top" secondItem="4AE-aF-hEM" secondAttribute="topMargin" constant="3" id="C4Q-hc-Ny9"/>
+                                        <constraint firstItem="jgG-Et-dgb" firstAttribute="leading" secondItem="4AE-aF-hEM" secondAttribute="leadingMargin" id="Ctr-tE-wJW"/>
+                                        <constraint firstItem="kfj-sD-9f5" firstAttribute="trailing" secondItem="4AE-aF-hEM" secondAttribute="trailingMargin" id="abf-nN-sBl"/>
+                                        <constraint firstItem="kfj-sD-9f5" firstAttribute="top" secondItem="4AE-aF-hEM" secondAttribute="topMargin" constant="3" id="hn7-iA-l0Q"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblCitrus" destination="kfj-sD-9f5" id="2JM-B8-Vez"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MelonCellId" id="5bs-lz-UlZ" customClass="UIFruitCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5bs-lz-UlZ" id="MgQ-Zz-LUr">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Melons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CZ-tg-KFt">
+                                            <rect key="frame" x="8" y="11" width="74" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="74" id="0XX-pe-SZl"/>
+                                                <constraint firstAttribute="height" constant="21" id="xu3-Ss-hm8"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantaloupe" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71z-TD-RJJ">
+                                            <rect key="frame" x="330" y="11" width="262" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="262" id="Jmm-O4-sXb"/>
+                                                <constraint firstAttribute="height" constant="21" id="Top-e8-ufd"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="71z-TD-RJJ" firstAttribute="trailing" secondItem="MgQ-Zz-LUr" secondAttribute="trailingMargin" id="HCU-3g-3Hx"/>
+                                        <constraint firstItem="0CZ-tg-KFt" firstAttribute="top" secondItem="MgQ-Zz-LUr" secondAttribute="topMargin" constant="3" id="Iip-NX-32o"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="0CZ-tg-KFt" secondAttribute="bottom" constant="4" id="KHM-wr-Dk6"/>
+                                        <constraint firstItem="71z-TD-RJJ" firstAttribute="top" secondItem="MgQ-Zz-LUr" secondAttribute="topMargin" constant="3" id="Qvn-oO-y72"/>
+                                        <constraint firstItem="0CZ-tg-KFt" firstAttribute="leading" secondItem="MgQ-Zz-LUr" secondAttribute="leadingMargin" id="XGd-0I-Pu7"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblMelon" destination="71z-TD-RJJ" id="lx1-xU-naJ"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MelonPickerCellId" rowHeight="178" id="Nb1-mJ-fpy" customClass="UIFruitCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nb1-mJ-fpy" id="hvW-Tr-KaB">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8G-v1-5fA" customClass="UIMelonPickerView">
+                                            <rect key="frame" x="8" y="8" width="584" height="162"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="162" id="hxl-dX-Kyl"/>
+                                            </constraints>
+                                        </pickerView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="l8G-v1-5fA" firstAttribute="trailing" secondItem="hvW-Tr-KaB" secondAttribute="trailingMargin" id="Kbi-Qp-e1d"/>
+                                        <constraint firstItem="l8G-v1-5fA" firstAttribute="top" secondItem="hvW-Tr-KaB" secondAttribute="topMargin" id="aSE-3u-4UM"/>
+                                        <constraint firstItem="l8G-v1-5fA" firstAttribute="leading" secondItem="hvW-Tr-KaB" secondAttribute="leadingMargin" id="lme-4T-MTD"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="l8G-v1-5fA" secondAttribute="bottom" constant="-0.5" id="yeV-Tc-vcA"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="pickerMelon" destination="l8G-v1-5fA" id="Cqg-7U-xYv"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CitrusPickerCellId" rowHeight="178" id="vNQ-DU-FSV" customClass="UIFruitCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vNQ-DU-FSV" id="mMz-N2-vCU">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WoN-AP-lB7" customClass="UICitrusPickerView">
+                                            <rect key="frame" x="8" y="8" width="584" height="162"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="162" id="Mr4-WV-RO7"/>
+                                            </constraints>
+                                        </pickerView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WoN-AP-lB7" firstAttribute="top" secondItem="mMz-N2-vCU" secondAttribute="topMargin" id="8PK-ic-mdQ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="WoN-AP-lB7" secondAttribute="bottom" constant="-0.5" id="EpW-zy-4Zl"/>
+                                        <constraint firstItem="WoN-AP-lB7" firstAttribute="trailing" secondItem="mMz-N2-vCU" secondAttribute="trailingMargin" id="Lju-CN-cTe"/>
+                                        <constraint firstItem="WoN-AP-lB7" firstAttribute="leading" secondItem="mMz-N2-vCU" secondAttribute="leadingMargin" id="b83-ac-n8s"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="pickerCitrus" destination="WoN-AP-lB7" id="2YN-bm-Y72"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zqw-LP-OOF" id="f5r-hr-XAT"/>
+                            <outlet property="delegate" destination="zqw-LP-OOF" id="jL2-BT-sqR"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qhg-Wu-LU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344" y="308"/>
+        </scene>
+    </scenes>
+</document>
